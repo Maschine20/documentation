@@ -1,0 +1,1 @@
+export { default } from "/Users/rafal/Desktop/DutchmanNL.github.io/docs/node_modules/@vuepress/plugin-back-to-top/enhanceAppFile.js"
