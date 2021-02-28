@@ -1,2 +1,2 @@
-import "/Users/rafal/Desktop/DutchmanNL.github.io/docs/node_modules/@vuepress/plugin-nprogress/enhanceAppFile.js"
+import "/Users/rafal/Documents/Programming/Own_Adapter/documentation/node_modules/@vuepress/plugin-nprogress/enhanceAppFile.js"
 export default {}

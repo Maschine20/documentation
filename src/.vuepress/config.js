@@ -1,4 +1,13 @@
-const { description } = require('../../package')
+const { description } = require('../../package');
+const fs = require("fs");
+const path = require("path");
+const translationArray= {}
+const items = [
+  { text: 'ESPHome', link: '/languages/en/ESPHome/' },
+  { text: 'WLED', link: '/languages/en/WLED/' },
+  { text: 'SourceAnalytix', link: '/languages/en/SourceAnalytix/' },
+];
+itemTranslator(items);
 
 module.exports = {
   /**
@@ -20,6 +29,11 @@ module.exports = {
       title: 'DutchmanNL | Adapter Dokumentation',
       description: 'Eine übersicht meiner Open Source Software projekte',
     },
+    // '/languages/nl/': {
+    //   lang: 'nl-NL',
+    //   title: 'DutchmanNL | Adapter Dokummentatie',
+    //   description: 'Een overzicht van mijn OpenSource Projecten',
+    // },
   },
 
   /**
@@ -43,65 +57,97 @@ module.exports = {
     editLinks: false,
     docsDir: '',
     editLinkText: '',
-    lastUpdated: true,
     locales: {
       '/': {
         label: 'English',
         selectText: 'Languages',
-        sidebar: [
-          {
-            title: 'SA',   // required
-            path: '/languages/en/SourceAnalytix/',      // optional, link of the title, which should be an absolute path and must exist
-            collapsable: true, // optional, defaults to true
-            // sidebarDepth: 1,    // optional, defaults to 1
-            children: [
-              // '',
-              '/languages/en/SourceAnalytix/initialisation',
-              '/languages/en/SourceAnalytix/firstSteps',
-            ]
-          },
-          // {
-          //   title: 'Group 2',
-          //   children: [ /* ... */ ],
-          //   initialOpenGroupIndex: -1 // optional, defaults to 0, defines the index of initially opened subgroup
-          // }
-        ],
+        sidebarDepth: 3,
+        sidebar: {
+          "/languages/en/introduction/": getSideBar(
+              "/languages/de/introduction/",
+              "Introduction",
+          ),
+          "/languages/en/ESPHome/": getSideBar(
+              "/languages/de/ESPHome/",
+              "ESPHome",
+          ),
+          "/languages/en/SourceAnalytix/": getSideBar(
+              "/languages/de/SourceAnalytix/",
+              "SourceAnalytix",
+          ),
+        },
         nav: [
-          {text: 'SourceAnalytix', link: '/languages/en/SourceAnalytix/'},
-          // {text: 'Bolt', link: '/fr/bolt/'},
-          // {text: 'Goody', link: '/fr/goody/'},
+          {
+            text: 'Adapter',
+            ariaLabel: 'Language Menu',
+            items: translationArray['EN']
+          },
           {text: 'Support Me', link: 'http://paypal.me/DutchmanNL'},
         ],
       },
       '/languages/de/': {
         label: 'Deutsch',
-        selectText: 'Languages',
-        // sidebar: {
-        sidebar: [
-          {
-            title: 'SA',   // required
-            path: '/languages/de/SourceAnalytix/',      // optional, link of the title, which should be an absolute path and must exist
-            collapsable: true, // optional, defaults to true
-            // sidebarDepth: 1,    // optional, defaults to 1
-            children: [
-              // '',
-                '/languages/de/SourceAnalytix/initialisation',
-              '/languages/de/SourceAnalytix/firstSteps',
-            ]
-          },
-          {
-            title: 'Group 2',
-            children: [ /* ... */ ],
-            initialOpenGroupIndex: -1 // optional, defaults to 0, defines the index of initially opened subgroup
-          }
-        ],
+        selectText: 'Sprachen',
+        sidebarDepth: 3,
+        sidebar: {
+          "/languages/de/introduction/": getSideBar(
+              "/languages/de/introduction/",
+              "Introduction",
+          ),
+          "/languages/de/ESPHome/": getSideBar(
+              "/languages/de/ESPHome/",
+              "ESPHome",
+          ),
+          "/languages/de/SourceAnalytix/": getSideBar(
+              "/languages/de/SourceAnalytix/",
+              "SourceAnalytix",
+          ),
+        },
         nav: [
-          {text: 'SourceAnalytix', link: '/languages/de/SourceAnalytix/'},
-          // {text: 'Bolt', link: '/fr/bolt/'},
-          // {text: 'Goody', link: '/fr/goody/'},
-          {text: 'Support Me', link: 'http://paypal.me/DutchmanNL'},
+          {
+            text: 'Adapter',
+            ariaLabel: 'Sprachen Menu',
+            items: translationArray['DE']
+          },
+          {text: 'Unterstütze mich', link: 'http://paypal.me/DutchmanNL'},
         ],
       },
+      // '/languages/nl/': {
+      //   label: 'Nederlands',
+      //   selectText: 'Languages',
+      //   // sidebar: {
+      //   sidebar: [
+      //     {
+      //       title: 'SourceAnalytix',   // required
+      //       path: '/languages/nl/SourceAnalytix/',      // optional, link of the title, which should be an absolute path and must exist
+      //       collapsable: true, // optional, defaults to true
+      //       // sidebarDepth: 1,    // optional, defaults to 1
+      //       children: [
+      //         // '',
+      //         '/languages/nl/SourceAnalytix/adapterConfig',
+      //         '/languages/nl/SourceAnalytix/initialisation',
+      //         '/languages/nl/SourceAnalytix/firstSteps',
+      //       ]
+      //     },
+      //     // {
+      //     //   title: 'Group 2',
+      //     //   children: [ /* ... */ ],
+      //     //   initialOpenGroupIndex: -1 // optional, defaults to 0, defines the index of initially opened subgroup
+      //     // }
+      //   ],
+      //   nav: [
+      //     {
+      //       text: 'Adapter',
+      //       ariaLabel: 'Language Menu',
+      //       items: [
+      //         { text: 'ESPHome', link: '/languages/nl/ESPHome/' },
+      //         { text: 'WLED', link: '/languages/nl/WLED/' },
+      //         { text: 'SourceAnalytix', link: '/languages/nl/SourceAnalytix/' },
+      //       ]
+      //     },
+      //     {text: 'Support Me', link: 'http://paypal.me/DutchmanNL'},
+      //   ],
+      // },
     },
   },
 
@@ -120,3 +166,29 @@ module.exports = {
     '@vuepress/search'
   ]
 }
+
+function getSideBar(folder, title) {
+  const extension = [".md"];
+  let files = fs
+      .readdirSync(path.join(`${__dirname}/../${folder}`))
+      .filter(
+          (item) =>
+              item.toLowerCase() != "readme.md" &&
+              fs.statSync(path.join(`${__dirname}/../${folder}`, item)).isFile() &&
+              extension.includes(path.extname(item))
+      );
+  return [{ title: title, children: ["", ...files] }];
+}
+
+  // Translate item array to all languages
+  function itemTranslator(items) {
+    translationArray['EN'] = items;
+    translationArray['DE'] = [];
+    for (const item in items){
+      translationArray['DE'].push(
+          {
+            text: items[item].text,
+            link: items[item].link.replace('en', 'de')
+          })
+    }
+  }

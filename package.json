@@ -10,12 +10,13 @@
   "repository": "https://github.com/DutchmanNL/DutchmanNL.github.io/DutchmanNL_Project_Space",
   "license": "MIT",
   "dependencies": {
+    "vuepress-bar": "^0.3.5",
     "vuepress-plugin-code-copy": "^1.0.6"
   },
   "devDependencies": {
-    "vuepress": "^1.8.0",
-    "@vuepress/plugin-back-to-top": "^1.8.0",
-    "@vuepress/plugin-medium-zoom": "^1.8.0",
+    "@vuepress/plugin-back-to-top": "^1.8.2",
+    "@vuepress/plugin-medium-zoom": "^1.8.2",
+    "vuepress": "^1.8.2",
     "vuepress-plugin-code-copy": "^1.0.6"
   },
   "scripts": {

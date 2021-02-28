@@ -1,3 +1,3 @@
-# Wie initialisiere ich diesen adapter 
+# Adapter initialisation procedure
 
 todo

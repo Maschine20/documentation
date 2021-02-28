@@ -1,0 +1,3 @@
+# Adapter Configuration
+
+todo

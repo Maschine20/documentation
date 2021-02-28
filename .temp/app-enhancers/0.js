@@ -1,1 +1,1 @@
-export { default } from "/Users/rafal/Desktop/DutchmanNL.github.io/docs/src/.vuepress/enhanceApp.js"
+export { default } from "/Users/rafal/Documents/Programming/Own_Adapter/documentation/src/.vuepress/enhanceApp.js"

@@ -1,15 +1,16 @@
 ---
 home: true
-heroImage: '/images/test.png'
 tagline: Documentation for ioBroker adapters managed and Maintained by DutchmanNL
-actionText: Quick Start →
-actionLink: /guide/
+heroImage: '/images/avatar.jpg'
+actionText: Overview →
+actionLink: /languages/en/introduction/
+
 features:
-- title: Feature 1 Title
-  details: Feature 1 Description
-- title: Feature 2 Title
-  details: Feature 2 Description
-- title: Feature 3 Title
-  details: Feature 3 Description
-footer: Made by Rafal Drozda with ❤️
+- title: ESPHome
+  details: The adapter automatically discover ESPHome managed devices and synchronize their data with ioBroker
+- title: SourceAnalytix
+  details: Detailed analysis of your Energy, gas and liquid consumptions. Supports (kWh, Wh, Watt, l/h and m3 )
+- title: WLED
+  details: Control NeoPixel (WS2812B, WS2811, SK6812, APA102) LEDs or also SPI based chipsets like the WS2801!
+  footer: Made by Rafal Drozda with ❤️
 ---

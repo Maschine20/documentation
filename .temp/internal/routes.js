@@ -4,28 +4,16 @@
 
 import { injectComponentOption, ensureAsyncComponentsLoaded } from '@app/util'
 import rootMixins from '@internal/root-mixins'
-import GlobalLayout from "/Users/rafal/Desktop/DutchmanNL.github.io/docs/node_modules/@vuepress/core/lib/client/components/GlobalLayout.vue"
+import GlobalLayout from "/Users/rafal/Documents/Programming/Own_Adapter/documentation/node_modules/@vuepress/core/lib/client/components/GlobalLayout.vue"
 
 injectComponentOption(GlobalLayout, 'mixins', rootMixins)
 export const routes = [
   {
-    name: "v-0886234b",
-    path: "/Tado/",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-0886234b").then(next)
-    },
-  },
-  {
-    path: "/Tado/index.html",
-    redirect: "/Tado/"
-  },
-  {
-    name: "v-87f17f6a",
+    name: "v-61435b9b",
     path: "/config/",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-87f17f6a").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-61435b9b").then(next)
     },
   },
   {
@@ -33,11 +21,11 @@ export const routes = [
     redirect: "/config/"
   },
   {
-    name: "v-ef401f7e",
+    name: "v-64eac0de",
     path: "/guide/",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-ef401f7e").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-64eac0de").then(next)
     },
   },
   {
@@ -45,31 +33,11 @@ export const routes = [
     redirect: "/guide/"
   },
   {
-    name: "v-181f1360",
-    path: "/guide/using-vue.html",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-181f1360").then(next)
-    },
-  },
-  {
-    name: "v-d0ad1c6a",
-    path: "/languages/de/SourceAnalytix/",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-d0ad1c6a").then(next)
-    },
-  },
-  {
-    path: "/languages/de/SourceAnalytix/index.html",
-    redirect: "/languages/de/SourceAnalytix/"
-  },
-  {
-    name: "v-f153a04e",
+    name: "v-13f0de89",
     path: "/",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-f153a04e").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-13f0de89").then(next)
     },
   },
   {
@@ -77,35 +45,111 @@ export const routes = [
     redirect: "/"
   },
   {
-    name: "v-30ee7d24",
-    path: "/languages/de/SourceAnalytix/firstSteps.html",
+    name: "v-be7a43c4",
+    path: "/languages/de/ESPHome/02.supportedTypes.html",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-30ee7d24").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-be7a43c4").then(next)
     },
   },
   {
-    name: "v-0a9b650e",
+    name: "v-047731e0",
+    path: "/languages/de/ESPHome/03.adapterConfig.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-047731e0").then(next)
+    },
+  },
+  {
+    name: "v-a512c5f0",
+    path: "/languages/de/ESPHome/05.stateExample.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-a512c5f0").then(next)
+    },
+  },
+  {
+    name: "v-8cb3ab0a",
+    path: "/languages/de/ESPHome/",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-8cb3ab0a").then(next)
+    },
+  },
+  {
+    path: "/languages/de/ESPHome/index.html",
+    redirect: "/languages/de/ESPHome/"
+  },
+  {
+    name: "v-2c30fc10",
+    path: "/languages/de/ESPHome/04.configExample.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-2c30fc10").then(next)
+    },
+  },
+  {
+    name: "v-7d06691b",
+    path: "/languages/de/SourceAnalytix/",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-7d06691b").then(next)
+    },
+  },
+  {
+    path: "/languages/de/SourceAnalytix/index.html",
+    redirect: "/languages/de/SourceAnalytix/"
+  },
+  {
+    name: "v-c9a34884",
     path: "/languages/de/SourceAnalytix/initialisation.html",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-0a9b650e").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-c9a34884").then(next)
     },
   },
   {
-    name: "v-50b9a91e",
-    path: "/languages/en/SourceAnalytix/firstSteps.html",
+    name: "v-0f490030",
+    path: "/languages/de/SourceAnalytix/adapterConfig.html",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-50b9a91e").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-0f490030").then(next)
     },
   },
   {
-    name: "v-6dd9fe95",
+    name: "v-fba53526",
+    path: "/languages/de/WLED/",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-fba53526").then(next)
+    },
+  },
+  {
+    path: "/languages/de/WLED/index.html",
+    redirect: "/languages/de/WLED/"
+  },
+  {
+    name: "v-458252cc",
+    path: "/languages/de/WLED/firstSteps.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-458252cc").then(next)
+    },
+  },
+  {
+    name: "v-22e74028",
+    path: "/languages/de/WLED/initialisation.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-22e74028").then(next)
+    },
+  },
+  {
+    name: "v-e1da9d76",
     path: "/languages/de/",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-6dd9fe95").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-e1da9d76").then(next)
     },
   },
   {
@@ -113,11 +157,63 @@ export const routes = [
     redirect: "/languages/de/"
   },
   {
-    name: "v-b13d17ca",
+    name: "v-994223e0",
+    path: "/guide/using-vue.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-994223e0").then(next)
+    },
+  },
+  {
+    name: "v-09f3c5ce",
+    path: "/languages/en/ESPHome/02.supportedTypes.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-09f3c5ce").then(next)
+    },
+  },
+  {
+    name: "v-c46017e0",
+    path: "/languages/en/ESPHome/03.adapterConfig.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-c46017e0").then(next)
+    },
+  },
+  {
+    name: "v-a8fef290",
+    path: "/languages/en/ESPHome/05.stateExample.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-a8fef290").then(next)
+    },
+  },
+  {
+    name: "v-43b2e10a",
+    path: "/languages/en/ESPHome/",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-43b2e10a").then(next)
+    },
+  },
+  {
+    path: "/languages/en/ESPHome/index.html",
+    redirect: "/languages/en/ESPHome/"
+  },
+  {
+    name: "v-6786ede0",
+    path: "/languages/en/ESPHome/04.configExample.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-6786ede0").then(next)
+    },
+  },
+  {
+    name: "v-e683292a",
     path: "/languages/en/SourceAnalytix/",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-b13d17ca").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-e683292a").then(next)
     },
   },
   {
@@ -125,19 +221,107 @@ export const routes = [
     redirect: "/languages/en/SourceAnalytix/"
   },
   {
-    name: "v-ff966e84",
-    path: "/languages/en/SourceAnalytix/initialisation.html",
+    name: "v-61a23da0",
+    path: "/languages/en/SourceAnalytix/adapterConfig.html",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-ff966e84").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-61a23da0").then(next)
     },
   },
   {
-    name: "v-b1222af6",
+    name: "v-10c7bf6e",
+    path: "/languages/en/SourceAnalytix/initialisation.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-10c7bf6e").then(next)
+    },
+  },
+  {
+    name: "v-5eb3447c",
+    path: "/languages/en/WLED/firstSteps.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-5eb3447c").then(next)
+    },
+  },
+  {
+    name: "v-4ff6c486",
+    path: "/languages/en/WLED/",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-4ff6c486").then(next)
+    },
+  },
+  {
+    path: "/languages/en/WLED/index.html",
+    redirect: "/languages/en/WLED/"
+  },
+  {
+    name: "v-9e5799be",
+    path: "/languages/de/introduction/",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-9e5799be").then(next)
+    },
+  },
+  {
+    path: "/languages/de/introduction/index.html",
+    redirect: "/languages/de/introduction/"
+  },
+  {
+    name: "v-6242cd9c",
+    path: "/languages/en/WLED/initialisation.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-6242cd9c").then(next)
+    },
+  },
+  {
+    name: "v-48d97371",
+    path: "/languages/en/introduction/",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-48d97371").then(next)
+    },
+  },
+  {
+    path: "/languages/en/introduction/index.html",
+    redirect: "/languages/en/introduction/"
+  },
+  {
+    name: "v-5aec7e1b",
+    path: "/languages/nl/ESPHome/",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-5aec7e1b").then(next)
+    },
+  },
+  {
+    path: "/languages/nl/ESPHome/index.html",
+    redirect: "/languages/nl/ESPHome/"
+  },
+  {
+    name: "v-991e9de0",
+    path: "/languages/nl/ESPHome/firstSteps.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-991e9de0").then(next)
+    },
+  },
+  {
+    name: "v-949867e0",
+    path: "/languages/nl/ESPHome/initialisation.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-949867e0").then(next)
+    },
+  },
+  {
+    name: "v-e6683c56",
     path: "/languages/nl/SourceAnalytix/",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-b1222af6").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-e6683c56").then(next)
     },
   },
   {
@@ -145,11 +329,39 @@ export const routes = [
     redirect: "/languages/nl/SourceAnalytix/"
   },
   {
-    name: "v-62d6c9d8",
+    name: "v-5f2791c4",
     path: "/languages/nl/SourceAnalytix/initialisation.html",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-62d6c9d8").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-5f2791c4").then(next)
+    },
+  },
+  {
+    name: "v-5daa36e7",
+    path: "/languages/nl/WLED/",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-5daa36e7").then(next)
+    },
+  },
+  {
+    path: "/languages/nl/WLED/index.html",
+    redirect: "/languages/nl/WLED/"
+  },
+  {
+    name: "v-2d263492",
+    path: "/languages/nl/WLED/firstSteps.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-2d263492").then(next)
+    },
+  },
+  {
+    name: "v-6c0ef59c",
+    path: "/languages/nl/WLED/initialisation.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-6c0ef59c").then(next)
     },
   },
   {
