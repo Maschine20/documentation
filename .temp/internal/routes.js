@@ -9,16 +9,12 @@ import GlobalLayout from "/Users/rafal/Documents/Programming/Own_Adapter/documen
 injectComponentOption(GlobalLayout, 'mixins', rootMixins)
 export const routes = [
   {
-    name: "v-61435b9b",
-    path: "/config/",
+    name: "v-994223e0",
+    path: "/guide/using-vue.html",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-61435b9b").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-994223e0").then(next)
     },
-  },
-  {
-    path: "/config/index.html",
-    redirect: "/config/"
   },
   {
     name: "v-64eac0de",
@@ -33,16 +29,16 @@ export const routes = [
     redirect: "/guide/"
   },
   {
-    name: "v-13f0de89",
-    path: "/",
+    name: "v-61435b9b",
+    path: "/config/",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-13f0de89").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-61435b9b").then(next)
     },
   },
   {
-    path: "/index.html",
-    redirect: "/"
+    path: "/config/index.html",
+    redirect: "/config/"
   },
   {
     name: "v-be7a43c4",
@@ -61,11 +57,31 @@ export const routes = [
     },
   },
   {
+    name: "v-13f0de89",
+    path: "/",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-13f0de89").then(next)
+    },
+  },
+  {
+    path: "/index.html",
+    redirect: "/"
+  },
+  {
     name: "v-a512c5f0",
     path: "/languages/de/ESPHome/05.stateExample.html",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
       ensureAsyncComponentsLoaded("Layout", "v-a512c5f0").then(next)
+    },
+  },
+  {
+    name: "v-2c30fc10",
+    path: "/languages/de/ESPHome/04.configExample.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-2c30fc10").then(next)
     },
   },
   {
@@ -79,14 +95,6 @@ export const routes = [
   {
     path: "/languages/de/ESPHome/index.html",
     redirect: "/languages/de/ESPHome/"
-  },
-  {
-    name: "v-2c30fc10",
-    path: "/languages/de/ESPHome/04.configExample.html",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-2c30fc10").then(next)
-    },
   },
   {
     name: "v-7d06691b",
@@ -117,6 +125,14 @@ export const routes = [
     },
   },
   {
+    name: "v-458252cc",
+    path: "/languages/de/WLED/firstSteps.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-458252cc").then(next)
+    },
+  },
+  {
     name: "v-fba53526",
     path: "/languages/de/WLED/",
     component: GlobalLayout,
@@ -129,20 +145,16 @@ export const routes = [
     redirect: "/languages/de/WLED/"
   },
   {
-    name: "v-458252cc",
-    path: "/languages/de/WLED/firstSteps.html",
+    name: "v-3a3cd61b",
+    path: "/languages/de/_Overview/",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-458252cc").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-3a3cd61b").then(next)
     },
   },
   {
-    name: "v-22e74028",
-    path: "/languages/de/WLED/initialisation.html",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-22e74028").then(next)
-    },
+    path: "/languages/de/_Overview/index.html",
+    redirect: "/languages/de/_Overview/"
   },
   {
     name: "v-e1da9d76",
@@ -157,19 +169,27 @@ export const routes = [
     redirect: "/languages/de/"
   },
   {
-    name: "v-994223e0",
-    path: "/guide/using-vue.html",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-994223e0").then(next)
-    },
-  },
-  {
     name: "v-09f3c5ce",
     path: "/languages/en/ESPHome/02.supportedTypes.html",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
       ensureAsyncComponentsLoaded("Layout", "v-09f3c5ce").then(next)
+    },
+  },
+  {
+    name: "v-22e74028",
+    path: "/languages/de/WLED/initialisation.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-22e74028").then(next)
+    },
+  },
+  {
+    name: "v-6786ede0",
+    path: "/languages/en/ESPHome/04.configExample.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-6786ede0").then(next)
     },
   },
   {
@@ -201,14 +221,6 @@ export const routes = [
     redirect: "/languages/en/ESPHome/"
   },
   {
-    name: "v-6786ede0",
-    path: "/languages/en/ESPHome/04.configExample.html",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-6786ede0").then(next)
-    },
-  },
-  {
     name: "v-e683292a",
     path: "/languages/en/SourceAnalytix/",
     component: GlobalLayout,
@@ -237,14 +249,6 @@ export const routes = [
     },
   },
   {
-    name: "v-5eb3447c",
-    path: "/languages/en/WLED/firstSteps.html",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-5eb3447c").then(next)
-    },
-  },
-  {
     name: "v-4ff6c486",
     path: "/languages/en/WLED/",
     component: GlobalLayout,
@@ -257,16 +261,12 @@ export const routes = [
     redirect: "/languages/en/WLED/"
   },
   {
-    name: "v-9e5799be",
-    path: "/languages/de/introduction/",
+    name: "v-5eb3447c",
+    path: "/languages/en/WLED/firstSteps.html",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-9e5799be").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-5eb3447c").then(next)
     },
-  },
-  {
-    path: "/languages/de/introduction/index.html",
-    redirect: "/languages/de/introduction/"
   },
   {
     name: "v-6242cd9c",
@@ -277,16 +277,16 @@ export const routes = [
     },
   },
   {
-    name: "v-48d97371",
-    path: "/languages/en/introduction/",
+    name: "v-d1c5ddca",
+    path: "/languages/en/_Overview/",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-48d97371").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-d1c5ddca").then(next)
     },
   },
   {
-    path: "/languages/en/introduction/index.html",
-    redirect: "/languages/en/introduction/"
+    path: "/languages/en/_Overview/index.html",
+    redirect: "/languages/en/_Overview/"
   },
   {
     name: "v-5aec7e1b",
