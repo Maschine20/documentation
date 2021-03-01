@@ -3,7 +3,7 @@ home: true
 tagline: Eine übersicht meiner Open Source Software projekte
 heroImage: '/images/avatar.jpg'
 actionText: Übersicht →
-actionLink: /languages/de/introduction/
+actionLink: /languages/de/_Overview/
 features:
 - title: ESPHome
   details: Der Adapter erkennt automatisch von ESPHome verwaltete Geräte und synchronisiert ihre Daten mit ioBroker

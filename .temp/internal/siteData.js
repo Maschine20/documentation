@@ -30,36 +30,6 @@ export const siteData = {
   ],
   "pages": [
     {
-      "title": "Using Vue in Markdown",
-      "frontmatter": {},
-      "regularPath": "/guide/using-vue.html",
-      "relativePath": "guide/using-vue.md",
-      "key": "v-994223e0",
-      "path": "/guide/using-vue.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "Browser API Access Restrictions",
-          "slug": "browser-api-access-restrictions"
-        },
-        {
-          "level": 2,
-          "title": "",
-          "slug": ""
-        }
-      ],
-      "lastUpdated": "2/27/2021, 10:59:25 PM"
-    },
-    {
-      "title": "Introduction",
-      "frontmatter": {},
-      "regularPath": "/guide/",
-      "relativePath": "guide/README.md",
-      "key": "v-64eac0de",
-      "path": "/guide/",
-      "lastUpdated": "2/27/2021, 10:59:25 PM"
-    },
-    {
       "title": "Config",
       "frontmatter": {
         "sidebar": "auto"
@@ -83,6 +53,66 @@ export const siteData = {
       "lastUpdated": "2/27/2021, 10:59:25 PM"
     },
     {
+      "title": "Introduction",
+      "frontmatter": {},
+      "regularPath": "/guide/",
+      "relativePath": "guide/README.md",
+      "key": "v-64eac0de",
+      "path": "/guide/",
+      "lastUpdated": "2/27/2021, 10:59:25 PM"
+    },
+    {
+      "title": "Using Vue in Markdown",
+      "frontmatter": {},
+      "regularPath": "/guide/using-vue.html",
+      "relativePath": "guide/using-vue.md",
+      "key": "v-994223e0",
+      "path": "/guide/using-vue.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "Browser API Access Restrictions",
+          "slug": "browser-api-access-restrictions"
+        },
+        {
+          "level": 2,
+          "title": "",
+          "slug": ""
+        }
+      ],
+      "lastUpdated": "2/27/2021, 10:59:25 PM"
+    },
+    {
+      "title": "Home",
+      "frontmatter": {
+        "home": true,
+        "tagline": "Documentation for ioBroker adapters managed and Maintained by DutchmanNL",
+        "heroImage": "/images/avatar.jpg",
+        "actionText": "Overview →",
+        "actionLink": "/languages/en/_Overview/",
+        "features": [
+          {
+            "title": "ESPHome",
+            "details": "The adapter automatically discover ESPHome managed devices and synchronize their data with ioBroker"
+          },
+          {
+            "title": "SourceAnalytix",
+            "details": "Detailed analysis of your Energy, gas and liquid consumptions. Supports (kWh, Wh, Watt, l/h and m3 )"
+          },
+          {
+            "title": "WLED",
+            "details": "Control NeoPixel (WS2812B, WS2811, SK6812, APA102) LEDs or also SPI based chipsets like the WS2801!",
+            "footer": "Made by Rafal Drozda with ❤️"
+          }
+        ]
+      },
+      "regularPath": "/",
+      "relativePath": "index.md",
+      "key": "v-13f0de89",
+      "path": "/",
+      "lastUpdated": "3/1/2021, 11:00:41 PM"
+    },
+    {
       "title": "Unterstützte Typen",
       "frontmatter": {},
       "regularPath": "/languages/de/ESPHome/02.supportedTypes.html",
@@ -96,6 +126,24 @@ export const siteData = {
           "slug": "der-adapter-unterstutzt-momentan-folgende-sensor-typen"
         }
       ],
+      "lastUpdated": "28.2.2021, 03:15:52"
+    },
+    {
+      "title": "Beispiele",
+      "frontmatter": {},
+      "regularPath": "/languages/de/ESPHome/05.stateExample.html",
+      "relativePath": "languages/de/ESPHome/05.stateExample.md",
+      "key": "v-a512c5f0",
+      "path": "/languages/de/ESPHome/05.stateExample.html",
+      "lastUpdated": "28.2.2021, 03:15:52"
+    },
+    {
+      "title": "Konfigurations Beispiel",
+      "frontmatter": {},
+      "regularPath": "/languages/de/ESPHome/04.configExample.html",
+      "relativePath": "languages/de/ESPHome/04.configExample.md",
+      "key": "v-2c30fc10",
+      "path": "/languages/de/ESPHome/04.configExample.html",
       "lastUpdated": "28.2.2021, 03:15:52"
     },
     {
@@ -125,71 +173,23 @@ export const siteData = {
       "lastUpdated": "28.2.2021, 03:15:52"
     },
     {
-      "title": "Home",
-      "frontmatter": {
-        "home": true,
-        "tagline": "Documentation for ioBroker adapters managed and Maintained by DutchmanNL",
-        "heroImage": "/images/avatar.jpg",
-        "actionText": "Overview →",
-        "actionLink": "/languages/en/introduction/",
-        "features": [
-          {
-            "title": "ESPHome",
-            "details": "The adapter automatically discover ESPHome managed devices and synchronize their data with ioBroker"
-          },
-          {
-            "title": "SourceAnalytix",
-            "details": "Detailed analysis of your Energy, gas and liquid consumptions. Supports (kWh, Wh, Watt, l/h and m3 )"
-          },
-          {
-            "title": "WLED",
-            "details": "Control NeoPixel (WS2812B, WS2811, SK6812, APA102) LEDs or also SPI based chipsets like the WS2801!",
-            "footer": "Made by Rafal Drozda with ❤️"
-          }
-        ]
-      },
-      "regularPath": "/",
-      "relativePath": "index.md",
-      "key": "v-13f0de89",
-      "path": "/",
-      "lastUpdated": "2/28/2021, 3:15:52 AM"
-    },
-    {
-      "title": "Beispiele",
+      "title": "Adapter initialisation procedure",
       "frontmatter": {},
-      "regularPath": "/languages/de/ESPHome/05.stateExample.html",
-      "relativePath": "languages/de/ESPHome/05.stateExample.md",
-      "key": "v-a512c5f0",
-      "path": "/languages/de/ESPHome/05.stateExample.html",
-      "lastUpdated": "28.2.2021, 03:15:52"
+      "regularPath": "/languages/de/SourceAnalytix/03.initialisation.html",
+      "relativePath": "languages/de/SourceAnalytix/03.initialisation.md",
+      "key": "v-029298e0",
+      "path": "/languages/de/SourceAnalytix/03.initialisation.html"
     },
     {
-      "title": "Konfigurations Beispiel",
+      "title": "Adapter Configuration",
       "frontmatter": {},
-      "regularPath": "/languages/de/ESPHome/04.configExample.html",
-      "relativePath": "languages/de/ESPHome/04.configExample.md",
-      "key": "v-2c30fc10",
-      "path": "/languages/de/ESPHome/04.configExample.html",
-      "lastUpdated": "28.2.2021, 03:15:52"
+      "regularPath": "/languages/de/SourceAnalytix/02.adapterConfig.html",
+      "relativePath": "languages/de/SourceAnalytix/02.adapterConfig.md",
+      "key": "v-07085882",
+      "path": "/languages/de/SourceAnalytix/02.adapterConfig.html"
     },
     {
-      "title": "Einleitung",
-      "frontmatter": {},
-      "regularPath": "/languages/de/ESPHome/",
-      "relativePath": "languages/de/ESPHome/README.md",
-      "key": "v-8cb3ab0a",
-      "path": "/languages/de/ESPHome/",
-      "headers": [
-        {
-          "level": 2,
-          "title": "Voraussetzungen",
-          "slug": "voraussetzungen"
-        }
-      ],
-      "lastUpdated": "28.2.2021, 03:15:52"
-    },
-    {
-      "title": "Einleitung",
+      "title": "SourceAnalytix",
       "frontmatter": {},
       "regularPath": "/languages/de/SourceAnalytix/",
       "relativePath": "languages/de/SourceAnalytix/README.md",
@@ -205,43 +205,55 @@ export const siteData = {
       "lastUpdated": "28.2.2021, 03:15:52"
     },
     {
-      "title": "Adapter initialisation procedure",
+      "title": "ESPHome",
       "frontmatter": {},
-      "regularPath": "/languages/de/SourceAnalytix/initialisation.html",
-      "relativePath": "languages/de/SourceAnalytix/initialisation.md",
-      "key": "v-c9a34884",
-      "path": "/languages/de/SourceAnalytix/initialisation.html",
+      "regularPath": "/languages/de/ESPHome/",
+      "relativePath": "languages/de/ESPHome/README.md",
+      "key": "v-8cb3ab0a",
+      "path": "/languages/de/ESPHome/",
+      "headers": [
+        {
+          "level": 2,
+          "title": "Voraussetzungen",
+          "slug": "voraussetzungen"
+        }
+      ],
       "lastUpdated": "28.2.2021, 03:15:52"
     },
     {
-      "title": "Adapter Configuration",
+      "title": "Wie initialisiere ich diesen adapter",
       "frontmatter": {},
-      "regularPath": "/languages/de/SourceAnalytix/adapterConfig.html",
-      "relativePath": "languages/de/SourceAnalytix/adapterConfig.md",
-      "key": "v-0f490030",
-      "path": "/languages/de/SourceAnalytix/adapterConfig.html",
-      "lastUpdated": "28.2.2021, 03:15:52"
+      "regularPath": "/languages/de/WLED/02.initialisation.html",
+      "relativePath": "languages/de/WLED/02.initialisation.md",
+      "key": "v-e91477e0",
+      "path": "/languages/de/WLED/02.initialisation.html"
     },
     {
       "title": "First Steps",
       "frontmatter": {},
-      "regularPath": "/languages/de/WLED/firstSteps.html",
-      "relativePath": "languages/de/WLED/firstSteps.md",
-      "key": "v-458252cc",
-      "path": "/languages/de/WLED/firstSteps.html",
-      "lastUpdated": "28.2.2021, 03:15:52"
+      "regularPath": "/languages/de/WLED/03.firstSteps.html",
+      "relativePath": "languages/de/WLED/03.firstSteps.md",
+      "key": "v-525bfd20",
+      "path": "/languages/de/WLED/03.firstSteps.html"
     },
     {
-      "title": "Wie macht man es",
+      "title": "Supported types",
       "frontmatter": {},
-      "regularPath": "/languages/de/WLED/",
-      "relativePath": "languages/de/WLED/README.md",
-      "key": "v-fba53526",
-      "path": "/languages/de/WLED/",
-      "lastUpdated": "28.2.2021, 03:15:52"
+      "regularPath": "/languages/en/ESPHome/02.supportedTypes.html",
+      "relativePath": "languages/en/ESPHome/02.supportedTypes.md",
+      "key": "v-09f3c5ce",
+      "path": "/languages/en/ESPHome/02.supportedTypes.html",
+      "headers": [
+        {
+          "level": 3,
+          "title": "The adapter currently supports the following sensor types",
+          "slug": "the-adapter-currently-supports-the-following-sensor-types"
+        }
+      ],
+      "lastUpdated": "2/28/2021, 3:15:52 AM"
     },
     {
-      "title": "Einleitung",
+      "title": "Übersicht",
       "frontmatter": {},
       "regularPath": "/languages/de/_Overview/",
       "relativePath": "languages/de/_Overview/README.md",
@@ -257,13 +269,22 @@ export const siteData = {
       "lastUpdated": "28.2.2021, 23:19:53"
     },
     {
+      "title": "Wie macht man es",
+      "frontmatter": {},
+      "regularPath": "/languages/de/WLED/",
+      "relativePath": "languages/de/WLED/README.md",
+      "key": "v-fba53526",
+      "path": "/languages/de/WLED/",
+      "lastUpdated": "28.2.2021, 03:15:52"
+    },
+    {
       "title": "Home",
       "frontmatter": {
         "home": true,
         "tagline": "Eine übersicht meiner Open Source Software projekte",
         "heroImage": "/images/avatar.jpg",
         "actionText": "Übersicht →",
-        "actionLink": "/languages/de/introduction/",
+        "actionLink": "/languages/de/_Overview/",
         "features": [
           {
             "title": "ESPHome",
@@ -284,41 +305,7 @@ export const siteData = {
       "relativePath": "languages/de/index.md",
       "key": "v-e1da9d76",
       "path": "/languages/de/",
-      "lastUpdated": "28.2.2021, 03:15:52"
-    },
-    {
-      "title": "Supported types",
-      "frontmatter": {},
-      "regularPath": "/languages/en/ESPHome/02.supportedTypes.html",
-      "relativePath": "languages/en/ESPHome/02.supportedTypes.md",
-      "key": "v-09f3c5ce",
-      "path": "/languages/en/ESPHome/02.supportedTypes.html",
-      "headers": [
-        {
-          "level": 3,
-          "title": "The adapter currently supports the following sensor types",
-          "slug": "the-adapter-currently-supports-the-following-sensor-types"
-        }
-      ],
-      "lastUpdated": "2/28/2021, 3:15:52 AM"
-    },
-    {
-      "title": "Wie initialisiere ich diesen adapter",
-      "frontmatter": {},
-      "regularPath": "/languages/de/WLED/initialisation.html",
-      "relativePath": "languages/de/WLED/initialisation.md",
-      "key": "v-22e74028",
-      "path": "/languages/de/WLED/initialisation.html",
-      "lastUpdated": "28.2.2021, 03:15:52"
-    },
-    {
-      "title": "Configuration Example",
-      "frontmatter": {},
-      "regularPath": "/languages/en/ESPHome/04.configExample.html",
-      "relativePath": "languages/en/ESPHome/04.configExample.md",
-      "key": "v-6786ede0",
-      "path": "/languages/en/ESPHome/04.configExample.html",
-      "lastUpdated": "2/28/2021, 3:15:52 AM"
+      "lastUpdated": "1.3.2021, 23:00:41"
     },
     {
       "title": "Adapter configuration",
@@ -356,7 +343,16 @@ export const siteData = {
       "lastUpdated": "2/28/2021, 3:15:52 AM"
     },
     {
-      "title": "Introduction",
+      "title": "Configuration Example",
+      "frontmatter": {},
+      "regularPath": "/languages/en/ESPHome/04.configExample.html",
+      "relativePath": "languages/en/ESPHome/04.configExample.md",
+      "key": "v-6786ede0",
+      "path": "/languages/en/ESPHome/04.configExample.html",
+      "lastUpdated": "2/28/2021, 3:15:52 AM"
+    },
+    {
+      "title": "ESPHome",
       "frontmatter": {},
       "regularPath": "/languages/en/ESPHome/",
       "relativePath": "languages/en/ESPHome/README.md",
@@ -372,7 +368,23 @@ export const siteData = {
       "lastUpdated": "2/28/2021, 3:15:52 AM"
     },
     {
-      "title": "Introduction",
+      "title": "Adapter Konfiguration",
+      "frontmatter": {},
+      "regularPath": "/languages/en/SourceAnalytix/02.adapterConfig.html",
+      "relativePath": "languages/en/SourceAnalytix/02.adapterConfig.md",
+      "key": "v-1d233a32",
+      "path": "/languages/en/SourceAnalytix/02.adapterConfig.html"
+    },
+    {
+      "title": "How to initialise this adapter",
+      "frontmatter": {},
+      "regularPath": "/languages/en/SourceAnalytix/03.initialisation.html",
+      "relativePath": "languages/en/SourceAnalytix/03.initialisation.md",
+      "key": "v-75ce2ee0",
+      "path": "/languages/en/SourceAnalytix/03.initialisation.html"
+    },
+    {
+      "title": "SourceAnalytix",
       "frontmatter": {},
       "regularPath": "/languages/en/SourceAnalytix/",
       "relativePath": "languages/en/SourceAnalytix/README.md",
@@ -388,22 +400,20 @@ export const siteData = {
       "lastUpdated": "2/28/2021, 3:15:52 AM"
     },
     {
-      "title": "Adapter Konfiguration",
+      "title": "Wie initialisiere ich diesen adapter",
       "frontmatter": {},
-      "regularPath": "/languages/en/SourceAnalytix/adapterConfig.html",
-      "relativePath": "languages/en/SourceAnalytix/adapterConfig.md",
-      "key": "v-61a23da0",
-      "path": "/languages/en/SourceAnalytix/adapterConfig.html",
-      "lastUpdated": "2/28/2021, 3:15:52 AM"
+      "regularPath": "/languages/en/WLED/03.initialisation.html",
+      "relativePath": "languages/en/WLED/03.initialisation.md",
+      "key": "v-f884b020",
+      "path": "/languages/en/WLED/03.initialisation.html"
     },
     {
-      "title": "How to initialise this adapter",
+      "title": "First Steps",
       "frontmatter": {},
-      "regularPath": "/languages/en/SourceAnalytix/initialisation.html",
-      "relativePath": "languages/en/SourceAnalytix/initialisation.md",
-      "key": "v-10c7bf6e",
-      "path": "/languages/en/SourceAnalytix/initialisation.html",
-      "lastUpdated": "2/27/2021, 10:59:25 PM"
+      "regularPath": "/languages/en/WLED/02.firstSteps.html",
+      "relativePath": "languages/en/WLED/02.firstSteps.md",
+      "key": "v-1f194fe0",
+      "path": "/languages/en/WLED/02.firstSteps.html"
     },
     {
       "title": "Wie macht man es",
@@ -415,25 +425,7 @@ export const siteData = {
       "lastUpdated": "2/28/2021, 3:15:52 AM"
     },
     {
-      "title": "First Steps",
-      "frontmatter": {},
-      "regularPath": "/languages/en/WLED/firstSteps.html",
-      "relativePath": "languages/en/WLED/firstSteps.md",
-      "key": "v-5eb3447c",
-      "path": "/languages/en/WLED/firstSteps.html",
-      "lastUpdated": "2/28/2021, 3:15:52 AM"
-    },
-    {
-      "title": "Wie initialisiere ich diesen adapter",
-      "frontmatter": {},
-      "regularPath": "/languages/en/WLED/initialisation.html",
-      "relativePath": "languages/en/WLED/initialisation.md",
-      "key": "v-6242cd9c",
-      "path": "/languages/en/WLED/initialisation.html",
-      "lastUpdated": "2/28/2021, 3:15:52 AM"
-    },
-    {
-      "title": "Introduction",
+      "title": "Übersicht",
       "frontmatter": {},
       "regularPath": "/languages/en/_Overview/",
       "relativePath": "languages/en/_Overview/README.md",
@@ -447,78 +439,6 @@ export const siteData = {
         }
       ],
       "lastUpdated": "2/28/2021, 11:19:53 PM"
-    },
-    {
-      "title": "Wie macht man es",
-      "frontmatter": {},
-      "regularPath": "/languages/nl/ESPHome/",
-      "relativePath": "languages/nl/ESPHome/README.md",
-      "key": "v-5aec7e1b",
-      "path": "/languages/nl/ESPHome/",
-      "lastUpdated": "2/28/2021, 3:15:52 AM"
-    },
-    {
-      "title": "First Steps",
-      "frontmatter": {},
-      "regularPath": "/languages/nl/ESPHome/firstSteps.html",
-      "relativePath": "languages/nl/ESPHome/firstSteps.md",
-      "key": "v-991e9de0",
-      "path": "/languages/nl/ESPHome/firstSteps.html",
-      "lastUpdated": "2/28/2021, 3:15:52 AM"
-    },
-    {
-      "title": "Wie initialisiere ich diesen adapter",
-      "frontmatter": {},
-      "regularPath": "/languages/nl/ESPHome/initialisation.html",
-      "relativePath": "languages/nl/ESPHome/initialisation.md",
-      "key": "v-949867e0",
-      "path": "/languages/nl/ESPHome/initialisation.html",
-      "lastUpdated": "2/28/2021, 3:15:52 AM"
-    },
-    {
-      "title": "Introduction",
-      "frontmatter": {},
-      "regularPath": "/languages/nl/SourceAnalytix/",
-      "relativePath": "languages/nl/SourceAnalytix/README.md",
-      "key": "v-e6683c56",
-      "path": "/languages/nl/SourceAnalytix/",
-      "lastUpdated": "2/27/2021, 10:59:25 PM"
-    },
-    {
-      "title": "Hoe initialiseer je deze adapter",
-      "frontmatter": {},
-      "regularPath": "/languages/nl/SourceAnalytix/initialisation.html",
-      "relativePath": "languages/nl/SourceAnalytix/initialisation.md",
-      "key": "v-5f2791c4",
-      "path": "/languages/nl/SourceAnalytix/initialisation.html",
-      "lastUpdated": "2/27/2021, 10:59:25 PM"
-    },
-    {
-      "title": "Wie macht man es",
-      "frontmatter": {},
-      "regularPath": "/languages/nl/WLED/",
-      "relativePath": "languages/nl/WLED/README.md",
-      "key": "v-5daa36e7",
-      "path": "/languages/nl/WLED/",
-      "lastUpdated": "2/28/2021, 3:15:52 AM"
-    },
-    {
-      "title": "First Steps",
-      "frontmatter": {},
-      "regularPath": "/languages/nl/WLED/firstSteps.html",
-      "relativePath": "languages/nl/WLED/firstSteps.md",
-      "key": "v-2d263492",
-      "path": "/languages/nl/WLED/firstSteps.html",
-      "lastUpdated": "2/28/2021, 3:15:52 AM"
-    },
-    {
-      "title": "Wie initialisiere ich diesen adapter",
-      "frontmatter": {},
-      "regularPath": "/languages/nl/WLED/initialisation.html",
-      "relativePath": "languages/nl/WLED/initialisation.md",
-      "key": "v-6c0ef59c",
-      "path": "/languages/nl/WLED/initialisation.html",
-      "lastUpdated": "2/28/2021, 3:15:52 AM"
     }
   ],
   "themeConfig": {
@@ -556,8 +476,8 @@ export const siteData = {
             "collapsable": true,
             "sidebarDepth": 3,
             "children": [
-              "/languages/en/SourceAnalytix/adapterConfig",
-              "/languages/en/SourceAnalytix/initialisation"
+              "/languages/en/SourceAnalytix/02.adapterConfig",
+              "/languages/en/SourceAnalytix/03.initialisation"
             ]
           }
         ],
@@ -616,8 +536,8 @@ export const siteData = {
             "collapsable": true,
             "sidebarDepth": 3,
             "children": [
-              "/languages/de/SourceAnalytix/adapterConfig",
-              "/languages/de/SourceAnalytix/initialisation"
+              "/languages/de/SourceAnalytix/02.adapterConfig",
+              "/languages/de/SourceAnalytix/03.initialisation"
             ]
           }
         ],

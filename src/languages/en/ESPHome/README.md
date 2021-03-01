@@ -1,4 +1,4 @@
-# Introduction
+# ESPHome
 
 ![Basic configuration](./img/esphome.png)
 

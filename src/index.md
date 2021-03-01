@@ -3,7 +3,7 @@ home: true
 tagline: Documentation for ioBroker adapters managed and Maintained by DutchmanNL
 heroImage: '/images/avatar.jpg'
 actionText: Overview →
-actionLink: /languages/en/introduction/
+actionLink: /languages/en/_Overview/
 
 features:
 - title: ESPHome
