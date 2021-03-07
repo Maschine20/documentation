@@ -1,1 +1,0 @@
-export { default } from "/Users/rafal/Documents/Programming/Own_Adapter/documentation/src/.vuepress/enhanceApp.js"

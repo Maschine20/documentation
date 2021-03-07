@@ -6,8 +6,8 @@ and the associated documentation. Have fun!
 
 ## Adapter overview
 
-| Adapter name | Version | Beta | Installations | Functionality | Description |
-| - | - | - | - | - | - |
-| ESPHome | | | ![Number of Installations (latest)](http://iobroker.live/badges/esphome-installed.svg) | Communicate with ESPHome managed devices | The adapter automatically detects devices managed by ESPHome and synchronizes their data with ioBroker |
-| SourceAnalytix | | | Analysis of your consumption | Detailed analysis of your energy, gas and liquid consumption. Supported (kWh, Wh, Watt, l / h and m3) |
-| WLED | | | Controlling NeoPixel LEDs | (WS2812B, WS2811, SK6812, APA102) or SPI-based chipsets like the WS2801! |
+| Adapter name | Version | Installations | Functionality |
+| - | - | - | - |
+| ESPHome | <img src="https://nodei.co/npm/iobroker.esphome.png?" > | ![Number of Installations (latest)](http://iobroker.live/badges/esphome-installed.svg) | Communicate with ESPHome managed devices |
+| SourceAnalytix | <img src="https://nodei.co/npm/iobroker.sourceanalytix.png?" > | ![Number of Installations (latest)](http://iobroker.live/badges/sourceanalytix-installed.svg) | Detailed analysis of your energy, gas and liquid consumption. </br> Supports (kWh, Wh, Watt, l / h and m3) |
+| WLED | <img src="https://nodei.co/npm/iobroker.wled.png?" > | ![Number of Installations (latest)](http://iobroker.live/badges/wled-installed.svg) | Controlling NeoPixel LEDs (WS2812B, WS2811, SK6812, APA102) </br> or SPI-based chipsets like the WS2801! |

@@ -43,21 +43,21 @@ module.exports = {
     /**
      * Ref：https://v1.vuepress.vuejs.org/config/#description
      */
-    description: 'DutchmanNL | Adapter Documentation',
+    description: 'DrozmotiX | Adapter Documentation',
     locales: {
         '/': {
             lang: 'en-US',
-            title: 'DutchmanNL | Adapter Documentation',
+            title: 'DrozmotiX | Adapter Documentation',
             description: 'An overview of my open source software projects',
         },
         '/languages/de/': {
             lang: 'de-DE',
-            title: 'DutchmanNL | Adapter Dokumentation',
+            title: 'DrozmotiX | Adapter Dokumentation',
             description: 'Eine übersicht meiner Open Source Software projekte',
         },
         // '/languages/nl/': {
         //   lang: 'nl-NL',
-        //   title: 'DutchmanNL | Adapter Dokummentatie',
+        //   title: 'DrozmotiX | Adapter Dokummentatie',
         //   description: 'Een overzicht van mijn OpenSource Projecten',
         // },
     },
