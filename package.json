@@ -10,7 +10,7 @@
   "repository": "https://github.com/DutchmanNL/DutchmanNL.github.io/DutchmanNL_Project_Space",
   "license": "MIT",
   "dependencies": {
-    "vuepress-bar": "^0.3.5",
+    "vuepress-bar": "^0.3.6",
     "vuepress-plugin-code-copy": "^1.0.6"
   },
   "devDependencies": {
