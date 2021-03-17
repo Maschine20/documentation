@@ -6,6 +6,7 @@ const sideBarTranslationArray = {}
 const items = [
     {text: 'Overview', link: '/languages/en/_Overview/'},
     {text: 'ESPHome', link: '/languages/en/ESPHome/'},
+    {text: 'Klipper-Moonraker', link: '/languages/en/Klipper-Moonraker/'},
     // {text: 'WLED', link: '/languages/en/WLED/'},
     {text: 'SourceAnalytix', link: '/languages/en/SourceAnalytix/'},
 ];
@@ -23,6 +24,13 @@ const sideBar = [
         collapsable: true, // optional, defaults to true
         sidebarDepth: 3,    // optional, defaults to 1
         childrenFolder: '/languages/en/ESPHome/',
+    },
+    {
+        title: 'Klipper-Moonraker',   // required
+        path: '/languages/en/Klipper-Moonraker/',  // optional, link of the title, which should be an absolute path and must exist
+        collapsable: true, // optional, defaults to true
+        sidebarDepth: 3,    // optional, defaults to 1
+        childrenFolder: '/languages/en/Klipper-Moonraker/',
     },
     {
         title: 'SourceAnalytix',   // required
