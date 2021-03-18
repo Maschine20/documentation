@@ -87,14 +87,15 @@ module.exports = {
      * ref：https://v1.vuepress.vuejs.org/theme/default-theme-config.html
      */
     themeConfig: {
-        repo: '',
-        editLinks: false,
-        docsDir: '',
-        editLinkText: '',
+        repo: 'DutchmanNL/documentation',
+        editLinks: true,
+        docsDir: 'src',
+        docsBranch: 'main',
         locales: {
             '/': {
                 label: 'English',
                 selectText: 'Languages',
+                editLinkText: 'You can help us by editing this page hier',
                 sidebar: sideBarTranslationArray['EN'],
                 nav: [
                     {
@@ -108,6 +109,7 @@ module.exports = {
             '/languages/de/': {
                 label: 'Deutsch',
                 selectText: 'Sprachen',
+                editLinkText: 'Sie können uns helfen, indem Sie diese Seite hier bearbeiten ',
                 sidebarDepth: 3,
                 sidebar: sideBarTranslationArray['DE'],
                 nav: [
