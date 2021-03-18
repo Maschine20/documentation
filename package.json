@@ -1,13 +1,13 @@
 {
-  "name": "DutchmanNL_Project_Space",
+  "name": "DrozmotiX_Project_Space",
   "version": "0.0.1",
-  "description": "Documentation for ioBroker adapters managed and Maintained by DutchmanNL",
+  "description": "Documentation for ioBroker adapters managed and Maintained by DrozmotiX",
   "main": "index.js",
   "authors": {
     "name": "Rafal Drozda",
     "email": "rdrozda96@gmail.com"
   },
-  "repository": "https://github.com/DutchmanNL/DutchmanNL.github.io/DutchmanNL_Project_Space",
+  "repository": "https://github.com/DrozmotiX/DrozmotiX.github.io/DrozmotiX_Project_Space",
   "license": "MIT",
   "dependencies": {
     "vuepress-bar": "^0.3.6",
