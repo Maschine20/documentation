@@ -9,6 +9,7 @@ const items = [
     {text: 'Klipper-Moonraker', link: '/languages/en/Klipper-Moonraker/'},
     // {text: 'WLED', link: '/languages/en/WLED/'},
     {text: 'SourceAnalytix', link: '/languages/en/SourceAnalytix/'},
+    {text: 'Tado', link: '/languages/en/Tado/'},
 ];
 const sideBar = [
     {
@@ -38,6 +39,13 @@ const sideBar = [
         collapsable: true, // optional, defaults to true
         sidebarDepth: 3,    // optional, defaults to 1
         childrenFolder: '/languages/en/SourceAnalytix/',
+    },
+    {
+        title: 'Tado',   // required
+        path: '/languages/en/Tado/',      // optional, link of the title, which should be an absolute path and must exist
+        collapsable: true, // optional, defaults to true
+        sidebarDepth: 3,    // optional, defaults to 1
+        childrenFolder: '/languages/en/Tado/',
     }]
 
 itemTranslator(items);
