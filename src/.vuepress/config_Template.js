@@ -177,6 +177,12 @@ module.exports = {
             staticIcon: true
         }
         ],
+        [
+            '@vuepress/google-analytics',
+            {
+                'ga': '' // UA-00000000-0
+            }
+        ],
         '@vuepress/last-updated',
         '@vuepress/back-to-top',
         '@vuepress/plugin-medium-zoom',
