@@ -23,35 +23,3 @@ This adapter uses the [esphome-native-api] (https://github.com/Nafaya/esphome-na
 You should be familiar how to use ESPHome and have a devices/sensor configured.  
 Please ensure the API is activated as the adapter will interact by ESPHome native API, you can define a password if needed
 [See ESPHome API refference](https://esphome.io/components/api.html?highlight=api)
-
-
-
-
-
-[comment]: <> (---)
-
-[comment]: <> (title: Verbrauchsdaten)
-
-[comment]: <> (- title: Umrechnungen &#40;Watt > kWh | liter > m3&#41;)
-
-[comment]: <> (  details: Feature 2 Description)
-
-[comment]: <> (- title: Kostenübersichten)
-
-[comment]: <> (  details: Feature 3 Description)
-
-[comment]: <> (---)
-
-[comment]: <> (features:)
-
-[comment]: <> (---)
-
-[comment]: <> ({)
-
-[comment]: <> ("title": "Blogging Like a Hacker",)
-
-[comment]: <> ("lang": "en-US")
-
-[comment]: <> (})
-
-[comment]: <> (---)
