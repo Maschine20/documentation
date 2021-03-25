@@ -20,10 +20,17 @@ const sideBar = [
         childrenFolder: `/languages/en/_Overview/`,
     },
     {
+        title: 'BasicSetup',   // required
+        path: '/languages/en/BasicSetup/',  // optional, link of the title, which should be an absolute path and must exist
+        collapsable: true, // optional, defaults to true
+        sidebarDepth: 5,    // optional, defaults to 1
+        childrenFolder: '/languages/en/BasicSetup/',
+    },
+    {
         title: 'ESPHome',   // required
         path: '/languages/en/ESPHome/',  // optional, link of the title, which should be an absolute path and must exist
         collapsable: true, // optional, defaults to true
-        sidebarDepth: 3,    // optional, defaults to 1
+        sidebarDepth: 5,    // optional, defaults to 1
         childrenFolder: '/languages/en/ESPHome/',
     },
     {
@@ -55,21 +62,21 @@ module.exports = {
     /**
      * Ref：https://v1.vuepress.vuejs.org/config/#title
      */
-    title: 'Tuto VuePress / Netlify',
+    title: 'DrozmotiX-OSS | OpenSource support for SmartHome Solutions',
     /**
      * Ref：https://v1.vuepress.vuejs.org/config/#description
      */
-    description: 'DrozmotiX | Adapter Documentation',
+    description: 'We love to share and hope this site will help you find your way in realising your personal Smart Home Solution',
     locales: {
         '/': {
             lang: 'en-US',
-            title: 'DrozmotiX | Adapter Documentation',
-            description: 'An overview of my open source software projects',
+            title: 'DrozmotiX-OSS | OpenSource support for SmartHome Solutions',
+            description: 'We love to share and hope this site will help you find your way in realising your personal Smart Home Solution',
         },
         '/languages/de/': {
             lang: 'de-DE',
-            title: 'DrozmotiX | Adapter Dokumentation',
-            description: 'Eine übersicht meiner Open Source Software projekte',
+            title: 'DrozmotiX-OSS | OpenSource support für SmartHome Lösungen',
+            description: 'Wir lieben es wissen zu teilen und hoffen, dass diese Website Ihnen dabei hilft, Ihren Weg zur Verwirklichung Ihrer persönlichen Smart Home-Lösung zu finden',
         },
         // '/languages/nl/': {
         //   lang: 'nl-NL',
@@ -183,6 +190,13 @@ module.exports = {
                 'ga': '' // UA-00000000-0
             }
         ],
+        ['@vssue/vuepress-plugin-vssue', {
+            platform: 'github',
+            owner: 'DrozmotiX',
+            repo: 'documentation',
+            clientId: '',
+            clientSecret: '',
+        }],
         '@vuepress/last-updated',
         '@vuepress/back-to-top',
         '@vuepress/plugin-medium-zoom',
@@ -198,7 +212,7 @@ function itemTranslator(items) {
         itemTranslationArray['DE'].push(
             {
                 text: items[item].text,
-                    link: items[item].link.replace('en', 'de')
+                link: items[item].link.replace('en', 'de')
             })
     }
 }

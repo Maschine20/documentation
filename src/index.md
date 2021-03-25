@@ -1,6 +1,6 @@
 ---
 home: true
-tagline: Documentation concerning ioBroker adapters Managed by DrozmotiX
+tagline: We love to share and hope this site will help you find your way in realising you personal Smart Home Solution
 actionText: Overview →
 actionLink: /languages/en/_Overview/
 
