@@ -5,12 +5,12 @@ actionText: Overview →
 actionLink: /languages/en/_Overview/
 
 features:
-- title: ESPHome
-  details: The adapter automatically discover ESPHome managed devices and synchronize their data with ioBroker
-- title: SourceAnalytix
-  details: Detailed analysis of your Energy, gas and liquid consumptions. Supports (kWh, Wh, Watt, l/h and m3 )
-- title: WLED
-  details: Control NeoPixel (WS2812B, WS2811, SK6812, APA102) LEDs or also SPI based chipsets like the WS2801!
+- title: Central System
+  details: Every smart home needs a stable foundation. Here we share our setup with you for inspiration
+- title: ioBroker
+  details: One of the best Open-Source Smart Home platform! We are happy to support you with our skills, experiences and knowledge 
+- title: Projects
+  details: Several ioBroker Adapters (Plugins) integrating devices, services or logic for your Smart Home
   
 footer: Made by Rafal Drozda | Knowledge has no value unless you use and share it
 
