@@ -23,8 +23,6 @@ Native Integration des von ESPHome verwalteten Geräts (inklusive Dashboard) dur
 
 Dieser Adapter verwendet die [esphome-native-api](https://github.com/Nafaya/esphome-native-api#readme) mit allen Credits an @Nafaya zur Interaktion mit der [ESPHome API](https://esphome.io/components/api.html?highlight=api)!
 
-Unsere gesamte Adapter-Dokumentation finden Sie auf der [The DrozmotiX Docu Page](https://DrozmotiX.github.io/languages/en/ESPHome)
-
 ## Voraussetzungen
 
     * NodeJS >= 12.x
