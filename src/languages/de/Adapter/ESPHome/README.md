@@ -21,6 +21,7 @@ Native Integration des von ESPHome verwalteten Geräts (inklusive Dashboard) dur
 
 ![Logo](./img/dashboard.png)
 
+
 Dieser Adapter verwendet die [esphome-native-api](https://github.com/Nafaya/esphome-native-api#readme) mit allen Credits an @Nafaya zur Interaktion mit der [ESPHome API](https://esphome.io/components/api.html?highlight=api)!
 
 ## Voraussetzungen
