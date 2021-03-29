@@ -4,60 +4,38 @@ const path = require("path");
 const itemTranslationArray = {}
 const sideBarTranslationArray = {}
 const items = [
-    {text: 'Overview', link: '/languages/en/_Overview/'},
-    {text: 'ESPHome', link: '/languages/en/ESPHome/'},
-    {text: 'Klipper-Moonraker', link: '/languages/en/Klipper-Moonraker/'},
-    // {text: 'WLED', link: '/languages/en/WLED/'},
-    {text: 'SourceAnalytix', link: '/languages/en/SourceAnalytix/'},
-    {text: 'Tado', link: '/languages/en/Tado/'},
+    // {text: 'Overview', link: '/languages/en/_Overview/'},
+    {text: 'Basic Setup', link: '/languages/en/BasicSetup/'},
+    {text: 'Adapter', link: '/languages/en/Adapter/'},
 ];
 const sideBar = [
     {
         title: 'Overview',   // required
-        path: '/languages/en/_Overview/',      // optional, link of the title, which should be an absolute path and must exist
+        path: '/languages/en/_Overview/',   // optional, link of the title, which should be an absolute path and must exist
         collapsable: true, // optional, defaults to true
         sidebarDepth: 3,    // optional, defaults to 1
         childrenFolder: `/languages/en/_Overview/`,
     },
     {
-        title: 'BasicSetup',   // required
+        title: 'My Personal Setup',   // required
         path: '/languages/en/BasicSetup/',  // optional, link of the title, which should be an absolute path and must exist
         collapsable: true, // optional, defaults to true
         sidebarDepth: 5,    // optional, defaults to 1
         childrenFolder: '/languages/en/BasicSetup/',
     },
     {
-        title: 'ESPHome',   // required
-        path: '/languages/en/ESPHome/',  // optional, link of the title, which should be an absolute path and must exist
-        collapsable: true, // optional, defaults to true
-        sidebarDepth: 5,    // optional, defaults to 1
-        childrenFolder: '/languages/en/ESPHome/',
+        type: "group",
+        title: 'Adapter',   // required
+        path: '/languages/en/Adapter/',  // optional, link of the title, which should be an absolute path and must exist
+        collapsable: false, // optional, defaults to true
+        sidebarDepth: 7,    // optional, defaults to 1
+        childrenFolder: '/languages/en/Adapter/',
     },
-    {
-        title: 'Klipper-Moonraker',   // required
-        path: '/languages/en/Klipper-Moonraker/',  // optional, link of the title, which should be an absolute path and must exist
-        collapsable: true, // optional, defaults to true
-        sidebarDepth: 3,    // optional, defaults to 1
-        childrenFolder: '/languages/en/Klipper-Moonraker/',
-    },
-    {
-        title: 'SourceAnalytix',   // required
-        path: '/languages/en/SourceAnalytix/',      // optional, link of the title, which should be an absolute path and must exist
-        collapsable: true, // optional, defaults to true
-        sidebarDepth: 3,    // optional, defaults to 1
-        childrenFolder: '/languages/en/SourceAnalytix/',
-    },
-    {
-        title: 'Tado',   // required
-        path: '/languages/en/Tado/',      // optional, link of the title, which should be an absolute path and must exist
-        collapsable: true, // optional, defaults to true
-        sidebarDepth: 3,    // optional, defaults to 1
-        childrenFolder: '/languages/en/Tado/',
-    }]
+]
 
 itemTranslator(items);
 sidebarTranslator(sideBar)
-console.log(JSON.stringify(sideBarTranslationArray['EN']));
+console.log(JSON.stringify(sideBarTranslationArray));
 module.exports = {
     /**
      * Ref：https://v1.vuepress.vuejs.org/config/#title
@@ -125,7 +103,7 @@ module.exports = {
                 label: 'Deutsch',
                 selectText: 'Sprachen',
                 editLinkText: 'Sie können uns helfen, indem Sie diese Seite hier bearbeiten ',
-                sidebarDepth: 3,
+                sidebarDepth: 5,
                 sidebar: sideBarTranslationArray['DE'],
                 nav: [
                     {
@@ -179,7 +157,8 @@ module.exports = {
      * Apply plugins，ref：https://v1.vuepress.vuejs.org/zh/plugin/
      */
     plugins: [
-        ['vuepress-plugin-code-copy', {
+        ['vuepress-plugin-code-copy',
+            {
             align: 'top',
             staticIcon: true
         }
@@ -190,17 +169,24 @@ module.exports = {
                 'ga': '' // UA-00000000-0
             }
         ],
-        ['@vssue/vuepress-plugin-vssue', {
-            platform: 'github',
-            owner: 'DrozmotiX',
-            repo: 'documentation',
-            clientId: '',
-            clientSecret: '',
-        }],
+        ['@vssue/vuepress-plugin-vssue',
+            {
+                platform: 'github',
+                owner: 'DrozmotiX',
+                repo: 'documentation',
+                clientId: 'xxxxx',
+                clientSecret: 'xxxxx',
+            }
+        ],
         '@vuepress/last-updated',
         '@vuepress/back-to-top',
         '@vuepress/plugin-medium-zoom',
-        '@vuepress/search'
+        '@vuepress/search',
+        ['@vuepress/html-redirect',
+            {
+                duration: 0
+            }
+        ]
     ]
 }
 
@@ -220,48 +206,156 @@ function itemTranslator(items) {
 function sidebarTranslator(sidebar) {
     sideBarTranslationArray['EN'] = [];
     sideBarTranslationArray['DE'] = [];
-    for (const entry in sidebar){
-        // sidebar[entry].childrenFolder = sidebar[entry].childrenFolder.replace('en', 'de');
+    for (const entry in sidebar) {
         let childrenFolder = sidebar[entry].childrenFolder;
+        let folderNesting;
+        let folderName;
         let path = sidebar[entry].path;
-        sideBarTranslationArray['EN'].push(
-            {
-                "title": sidebar[entry].title,
-                "path": path,
-                "collapsable": sidebar[entry].collapsable,
-                "sidebarDepth": sidebar[entry].sidebarDepth,
-                "children": getSideBar(childrenFolder),
+
+        if (sidebar[entry].title == `Adapter`) {
+            console.log(`Adapter directory found`)
+            folderNesting = getSideBar(`${childrenFolder}`, childrenFolder)
+            console.log(`All adapter : ${folderNesting}`)
+        }
+
+        if (folderNesting === undefined) {
+
+            sideBarTranslationArray['EN'].push(
+                {
+                    "title": sidebar[entry].title,
+                    "path": path,
+                    "collapsable": sidebar[entry].collapsable,
+                    "sidebarDepth": sidebar[entry].sidebarDepth,
+                    "children": getSideBar(childrenFolder),
+                }
+            )
+            childrenFolder = sidebar[entry].childrenFolder.replace('en', 'de')
+            path = sidebar[entry].path.replace('en', 'de');
+            sideBarTranslationArray['DE'].push(
+                {
+                    "title": sidebar[entry].title,
+                    "path": path,
+                    "collapsable": sidebar[entry].collapsable,
+                    "sidebarDepth": sidebar[entry].sidebarDepth,
+                    "children": getSideBar(childrenFolder),
+                }
+            )
+        } else {
+            console.log(Object.keys(folderNesting))
+            console.log(`Adapter Array Found !`)
+
+            let firstLoop = true
+            for (const folder in folderNesting) {
+                console.log(`${folder}`)
+                folderName = folder;
+                console.log(`${folderNesting[folder]}`)
+
+                if (firstLoop) {
+                    firstLoop = false;
+                    sideBarTranslationArray['EN'].push(
+                        {
+                            "type": "group",
+                            "title": sidebar[entry].title,
+                            "path": path,
+                            "collapsable": sidebar[entry].collapsable,
+                            "sidebarDepth": sidebar[entry].sidebarDepth,
+                            "children": []
+                        }
+                    )
+
+
+                    // path = sidebar[entry].path.replace('en', 'de');
+                    sideBarTranslationArray['DE'].push(
+                        {
+                            "type": "group",
+                            "title": sidebar[entry].title,
+                            "path": path.replace('en', 'de'),
+                            "collapsable": sidebar[entry].collapsable,
+                            "sidebarDepth": sidebar[entry].sidebarDepth,
+                            "children": []
+                        }
+                    )
+
+                }
+
+                console.log(`Current Array ${folderNesting[folderName]}`)
+                sideBarTranslationArray['EN'][entry][`children`].push(
+                    {
+                        "type": "group",
+                        "title": folderName,
+                        "path": `/languages/en/Adapter/${folderName}/`,
+                        "children": folderNesting[folderName]
+                    }
+                )
+
+
+                // Translate child objects EN to DE
+                const translatedFolderNesting = []
+                translatedFolderNesting[folderName] = []
+                for (const childItem in folderNesting[folderName]) {
+                    translatedFolderNesting[folderName][childItem] = folderNesting[folderName][childItem].replace('en', 'de');
+                }
+                sideBarTranslationArray['DE'][entry][`children`].push(
+                    {
+                        "type": "group",
+                        "title": folderName,
+                        "path": `/languages/de/Adapter/${folderName}/`,
+                        "children": translatedFolderNesting[folderName]
+                    }
+                )
+                console.log(JSON.stringify(sideBarTranslationArray))
             }
-        )
-        childrenFolder = sidebar[entry].childrenFolder.replace('en', 'de')
-        path = sidebar[entry].path.replace('en', 'de');
-        sideBarTranslationArray['DE'].push(
-            {
-                "title": sidebar[entry].title,
-                "path": path,
-                "collapsable": sidebar[entry].collapsable,
-                "sidebarDepth": sidebar[entry].sidebarDepth,
-                "children": getSideBar(childrenFolder),
-            }
-        )
+
+            console.log(`SideBar Adapter ${JSON.stringify(sideBarTranslationArray[`EN`])}`)
+        }
     }
-    console.log(JSON.stringify(sideBarTranslationArray['EN']))
 }
 
-function getSideBar(folder) {
+function getSideBar(folder, directory) {
     let children = []
     const extension = ['.md'];
-    let files = fs
-        .readdirSync(path.join(`${__dirname}/../${folder}`))
-        .filter(
-            (item) =>
-                item.toLowerCase() !== 'readme.md' &&
-                fs.statSync(path.join(`${__dirname}/../${folder}`, item)).isFile() &&
-                extension.includes(path.extname(item))
-        );
+    let files;
+    let folders;
+    if (!directory || !folder.includes(`Adapter`)) {
+        files = fs
+            .readdirSync(path.join(`${__dirname}/../${folder}`))
+            .filter(
+                (item) =>
+                    item.toLowerCase() !== 'readme.md' &&
+                    fs.statSync(path.join(`${__dirname}/../${folder}`, item)).isFile() &&
+                    extension.includes(path.extname(item))
+            );
+        for (const filesKey in files) {
+            children.push(`${folder}${files[filesKey].replace(/.md/g, '')}`)
+        }
+        console.log(`Child items ${children}`)
+    } else {
+        // Build complex sidebar with grouped structure
+        files = fs
+            .readdirSync(path.join(`${__dirname}/../${folder}`))
+            .filter(
+                (item) =>
+                    item.toLowerCase() !== 'readme.md'
+            );
 
-    for (const filesKey in files) {
-        children.push(`${folder}${files[filesKey].replace(/.md/g, '')}`)
+        for (const filesKey in files) {
+            folders = fs
+                .readdirSync(path.join(`${__dirname}/../${folder}/${files[filesKey]}`))
+                .filter(
+                    (item) =>
+                        item.toLowerCase() !== 'readme.md' &&
+                        fs.statSync(path.join(`${__dirname}/../${folder}/${files[filesKey]}`, item)).isFile() &&
+                        extension.includes(path.extname(item))
+                );
+            let childrenTemp = []
+            for (const folderKey in folders) {
+                console.log(`${folders}`)
+                childrenTemp.push(`${folder}${files[filesKey]}/${folders[folderKey].replace(/.md/g, '')}`)
+            }
+            console.log(`Child items ${children}`)
+            children[files[filesKey]] = childrenTemp
+            console.log(`Child items ${children}`)
+        }
     }
     return children
 }
