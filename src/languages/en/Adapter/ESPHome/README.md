@@ -82,3 +82,7 @@ switch:
     output: 'gpio_12'
     
 ```
+
+::: tip Created configuration (>device<.yaml) files will be stored at
+```/opt/iobroker/node_modules/iobroker.esphome/config/>device<.yaml```
+::: 
